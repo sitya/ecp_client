@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://dev.aai.niif.hu/ecp/saml2/idp/metadata.php">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIDczCCAlugAwIBAgIJAPGcIrBsUfLNMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNVBAYTAmh1MREwDwYDVQQIDAhidWRhcGVzdDERMA8GA1UEBwwIYnVkYXBlc3QxDTALBgNVBAoMBG5paWYxDDAKBgNVBAsMA2FhaTAeFw0xNTA2MDExMTMyMjVaFw0yNTA1MzExMTMyMjVaMFAxCzAJBgNVBAYTAmh1MREwDwYDVQQIDAhidWRhcGVzdDERMA8GA1UEBwwIYnVkYXBlc3QxDTALBgNVBAoMBG5paWYxDDAKBgNVBAsMA2FhaTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANosiseOBhBfxdO3k2upJpzsCdZUEbOMOR0ukvCx/7E3/hWuhLhLhRnk92bu+5U/XU8hhgyPHIVLq4HUypzlB9eWqGxibs+Kf8UTyT1BPiRZvtgU95KzNXo+T24Vj4+0gBkGVcSesLPns3ACzrWc/LZMd3dwzIlKlWImeruG3UhW+0DmBdWg/L6Prtg4RBS8vuA9m7+Wh6Qlxi65lAmqSgdJQRFqlSbeUyi9F6lgevDtLPS81hhBrv1EIqI7jNtJLdvpMVTl17zQ6j2k/yVEwJkMV5qBdEvfShz1/b4cqiSz4UcpBkdOAvQVniVCFlK+t8x5ZeMDvpA5aT2v3jWhn70CAwEAAaNQME4wHQYDVR0OBBYEFCiEK3cyP2R0BFJUMmxuFGbhyKw5MB8GA1UdIwQYMBaAFCiEK3cyP2R0BFJUMmxuFGbhyKw5MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAHUmaDRj60fKFF3qz7RYdpzmqQdmCR3+Re9GmwBw55KhOBEC48mmki0YEC+ZGHEXAEM7wRGfFC8X4aJ09DePd4ID8JY+eUKrPxFOUcMny2eSw/Hz3p4CQUHRpWbeDDmsflXOtMBRQh1lnkzRuGEZKjQzBNKxCOEWPrkDpQxZOCKod2nP3stC8PLl9c+NqV2AEBSYNN/ahpi7Gj6kphleg9tTO2LMW5yYtldLVPxwp4GuS3HSrrz27zrVKp3c/rag3Q1qvH5N0X445ROorH18CfziGwlAkrkF9GV6zlS0rVy5ZCj8SP0fAS0wiazwsFT28SJ713ziumKpW9FY6PTh6UI=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIDczCCAlugAwIBAgIJAPGcIrBsUfLNMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNVBAYTAmh1MREwDwYDVQQIDAhidWRhcGVzdDERMA8GA1UEBwwIYnVkYXBlc3QxDTALBgNVBAoMBG5paWYxDDAKBgNVBAsMA2FhaTAeFw0xNTA2MDExMTMyMjVaFw0yNTA1MzExMTMyMjVaMFAxCzAJBgNVBAYTAmh1MREwDwYDVQQIDAhidWRhcGVzdDERMA8GA1UEBwwIYnVkYXBlc3QxDTALBgNVBAoMBG5paWYxDDAKBgNVBAsMA2FhaTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANosiseOBhBfxdO3k2upJpzsCdZUEbOMOR0ukvCx/7E3/hWuhLhLhRnk92bu+5U/XU8hhgyPHIVLq4HUypzlB9eWqGxibs+Kf8UTyT1BPiRZvtgU95KzNXo+T24Vj4+0gBkGVcSesLPns3ACzrWc/LZMd3dwzIlKlWImeruG3UhW+0DmBdWg/L6Prtg4RBS8vuA9m7+Wh6Qlxi65lAmqSgdJQRFqlSbeUyi9F6lgevDtLPS81hhBrv1EIqI7jNtJLdvpMVTl17zQ6j2k/yVEwJkMV5qBdEvfShz1/b4cqiSz4UcpBkdOAvQVniVCFlK+t8x5ZeMDvpA5aT2v3jWhn70CAwEAAaNQME4wHQYDVR0OBBYEFCiEK3cyP2R0BFJUMmxuFGbhyKw5MB8GA1UdIwQYMBaAFCiEK3cyP2R0BFJUMmxuFGbhyKw5MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAHUmaDRj60fKFF3qz7RYdpzmqQdmCR3+Re9GmwBw55KhOBEC48mmki0YEC+ZGHEXAEM7wRGfFC8X4aJ09DePd4ID8JY+eUKrPxFOUcMny2eSw/Hz3p4CQUHRpWbeDDmsflXOtMBRQh1lnkzRuGEZKjQzBNKxCOEWPrkDpQxZOCKod2nP3stC8PLl9c+NqV2AEBSYNN/ahpi7Gj6kphleg9tTO2LMW5yYtldLVPxwp4GuS3HSrrz27zrVKp3c/rag3Q1qvH5N0X445ROorH18CfziGwlAkrkF9GV6zlS0rVy5ZCj8SP0fAS0wiazwsFT28SJ713ziumKpW9FY6PTh6UI=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dev.aai.niif.hu/ecp/saml2/idp/SingleLogoutService.php"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dev.aai.niif.hu/ecp/saml2/idp/SSOService.php"/>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://dev.aai.niif.hu/ecp/saml2/idp/SSOService.php"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>
+
