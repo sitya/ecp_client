@@ -1,6 +1,6 @@
 CONFIG = 'pysaml_config.py'                # PySAML2 Configuration file name
 
-METADATA_FILE="/usr/local/etc/ecp_client/idp-metadata.xml"
+METADATA_FILE="/usr/local/etc/ecp_client/idp.xml"
 
 DEBUG=0
 
