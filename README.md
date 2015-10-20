@@ -1,6 +1,10 @@
 # ecp_client
 It is a very simple Python script based on [PySAML2](https://github.com/rohe/pysaml2) and [freeradius_pysaml2](https://github.com/rohe/freeradius_pysaml2.git). With this script you can test your SAML2 Identity Provider's ECP capabilities. 
 
+## prepare
+
+1. `apt-get install python-pip python-setuptools python-dev libffi-dev xmlsec1`
+
 ## configure
 
 1. Generate a self-signed cert into the created `pki` directory named as `ssl.key` and `ssl.cert`
@@ -12,5 +16,5 @@ It is a very simple Python script based on [PySAML2](https://github.com/rohe/pys
 
 `./ecp_client`
 
-Then look at the `STDOUT` for the result.
+Then look at the `STDOUT` for the result. You sould get something like this: http://pastebin.com/v8yXtHzD
 

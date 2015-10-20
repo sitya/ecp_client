@@ -28,7 +28,7 @@ CONFIG = {
     "cert_file" : BASEDIR + "pki/ssl.cert",
     "attribute_map_dir" : BASEDIR + "attributemaps",
     "metadata" : {
-       "local": [BASEDIR + "idp-metadata.xml"],
+       "local": [BASEDIR + "idp.xml"],
     },
     # in case xmlsec1 isn't anywhere normal
     "xmlsec_binary":"/usr/bin/xmlsec1",
