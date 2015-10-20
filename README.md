@@ -11,6 +11,12 @@ It is a very simple Python script based on [PySAML2](https://github.com/rohe/pys
 
 ## configure
 
+### simple way
+In this case during the test your ECP client will behave as SP with entityID: `https://dev.aai.niif.hu/ecp_client`, you can find certs in `pki` directory and metadata in `sp.xml`. You will be authenticated against IdP with entityID: `https://dev.aai.niif.hu/ecp/saml2/idp/metadata.php`. So you just should [run](#run) the script then look at the results.
+
+### sophisticated way
+Generate your own SP entity and pair with your ECP enabled IdP.
+
 1. Generate a self-signed cert into the created `pki` directory named as `ssl.key` and `ssl.cert` For exímple: `mkdir pki && cd pki && openssl genrsa 2048 > ssl.key && openssl req -new -x509 -nodes -sha1 -days 3650 -key ssl.key > ssl.cert`
 2. Generate `sp.xml` metadata file contains SAML2 metadata of this "SP" (This ecp client will behave as an SP, and the IdP has to know the metadata of this SP). You can do it manually, or there is a [tool](https://github.com/rohe/pysaml2/blob/ae9d27e5100f002f55ad6eb2b252a0aa5f16a336/tools/make_metadata.py) coming with `pysaml2`
 3. You have to give this metadata to the IdP. Do it as you like: using federation register tool, or feed it directly with the IdP
